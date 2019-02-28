@@ -41,4 +41,4 @@ server.listen(port, null, () => {
 });
 
 // Prevent Heroku Node App From Sleeping
-setInterval(() => https.get('https://echo-http.herokuapp.com/'), 15 * 60 * 1000); // every 15 minutes
+// setInterval(() => https.get('https://echo-http.herokuapp.com/'), 15 * 60 * 1000); // every 15 minutes
