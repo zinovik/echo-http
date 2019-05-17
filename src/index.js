@@ -1,5 +1,4 @@
 const http = require('http');
-const https = require('https');
 const url = require('url');
 
 const port = process.env.PORT || 7000;
@@ -39,6 +38,3 @@ const server = http.createServer((req, res) => {
 server.listen(port, null, () => {
   console.log('Server running');
 });
-
-// Prevent Heroku Node App From Sleeping
-// setInterval(() => https.get('https://echo-http.herokuapp.com/'), 15 * 60 * 1000); // every 15 minutes
